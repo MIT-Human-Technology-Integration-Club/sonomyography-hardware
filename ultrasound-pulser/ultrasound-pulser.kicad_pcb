@@ -11925,6 +11925,86 @@
 			)
 		)
 	)
+	(gr_line
+		(start 49.784 55.88)
+		(end 52.832 55.88)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a6cf7111-06ed-4567-9d39-ca16507d7920")
+	)
+	(gr_line
+		(start 50.8 54.61)
+		(end 51.816 54.61)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "01ebe2d9-7701-400d-926e-0b2a7e843e76")
+	)
+	(gr_line
+		(start 51.308 52.832)
+		(end 49.784 55.88)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d84c2808-525c-44ee-baee-93913f089db4")
+	)
+	(gr_line
+		(start 51.308 52.832)
+		(end 52.832 55.88)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cc3893fd-d626-4877-a535-f3b91d922067")
+	)
+	(gr_line
+		(start 51.308 53.594)
+		(end 50.8 54.61)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6238acab-e636-4551-b442-ebd04d3f6c5c")
+	)
+	(gr_line
+		(start 51.308 55.118)
+		(end 51.308 55.626)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e4ce1ab4-38aa-47f1-86c1-706effd83624")
+	)
+	(gr_line
+		(start 51.308 55.626)
+		(end 51.816 54.61)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "00c93c3c-e13f-45bd-9c20-3f9690b0c862")
+	)
+	(gr_line
+		(start 51.816 55.372)
+		(end 51.308 55.626)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "66fff067-1747-4bdf-9f56-7400c408b3e8")
+	)
 	(gr_rect
 		(start 44.196 31.496)
 		(end 99.568 99.06)
@@ -11935,6 +12015,18 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "8bdc6fa4-7b4e-4ddb-a803-7afd961e2640")
+	)
+	(gr_text "BYPASS - PROTECT"
+		(at 73.88 49.33 0)
+		(layer "F.SilkS")
+		(uuid "9157b8a9-d2d9-418b-ab61-084d916779c0")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
 	)
 	(gr_text "ULTRASONIC PULSER\nREVISION 1\nJIERUEI CHANG\n10/10/2026"
 		(at 58.928 79.756 90)
@@ -12062,6 +12154,18 @@
 				(size 0.78 1)
 				(thickness 0.15)
 				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "WARNING!\nHIGH VOLTAGE!"
+		(at 46.46 51.75 0)
+		(layer "F.SilkS")
+		(uuid "a5ac5014-9ca0-4f70-9b34-6bf7b2564c76")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
