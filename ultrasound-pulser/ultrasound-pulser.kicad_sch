@@ -3786,145 +3786,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+VSW"
 			(power global)
 			(pin_numbers
@@ -6100,12 +5961,6 @@
 		(uuid "e6090fdb-1b0d-4ce0-8818-308be3538418")
 	)
 	(junction
-		(at 186.69 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb8e51a9-1f8e-41d8-8ec3-556e953adaee")
-	)
-	(junction
 		(at 53.34 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6122,6 +5977,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd923f42-6d54-4769-a515-5a9c887f3574")
+	)
+	(no_connect
+		(at 198.12 39.37)
+		(uuid "01a0f5da-037f-441a-ac39-ef6484cbbe7e")
 	)
 	(no_connect
 		(at 218.44 72.39)
@@ -6164,12 +6023,20 @@
 		(uuid "3e30a6c4-124d-4ee3-9127-31d213b653c1")
 	)
 	(no_connect
+		(at 198.12 34.29)
+		(uuid "454062ad-9dd1-4a09-921f-d5341a5dd573")
+	)
+	(no_connect
 		(at 198.12 49.53)
 		(uuid "4960a8aa-5c40-4817-a937-168005c7caab")
 	)
 	(no_connect
 		(at 269.24 44.45)
 		(uuid "596dcb5e-8dc6-410e-b4b0-026435eeec6e")
+	)
+	(no_connect
+		(at 198.12 36.83)
+		(uuid "66c93188-d322-40e2-bcc9-ca63492a7f48")
 	)
 	(no_connect
 		(at 218.44 74.93)
@@ -6242,6 +6109,10 @@
 	(no_connect
 		(at 269.24 31.75)
 		(uuid "b5035ee7-6f4e-4988-a17d-767546c6e36d")
+	)
+	(no_connect
+		(at 198.12 41.91)
+		(uuid "b74dcc3d-7fea-4ff0-ad0f-61d62bdc48b0")
 	)
 	(no_connect
 		(at 30.48 22.86)
@@ -6755,16 +6626,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 36.83) (xy 198.12 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a50743c-fc1f-4697-b032-0d7e760883f1")
-	)
-	(wire
-		(pts
 			(xy 269.24 134.62) (xy 271.78 134.62)
 		)
 		(stroke
@@ -6802,16 +6663,6 @@
 			(type default)
 		)
 		(uuid "4ee95838-f8ec-4bc4-94ff-a7b28b423cb5")
-	)
-	(wire
-		(pts
-			(xy 186.69 39.37) (xy 186.69 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f9321d9-4ec5-4a09-ba72-40a4d1fa8c66")
 	)
 	(wire
 		(pts
@@ -7285,16 +7136,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 39.37) (xy 186.69 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b31ec0fe-07ae-4cb5-8a61-82dae961aff1")
-	)
-	(wire
-		(pts
 			(xy 109.22 54.61) (xy 119.38 54.61)
 		)
 		(stroke
@@ -7322,16 +7163,6 @@
 			(type default)
 		)
 		(uuid "b4f892b4-6918-4891-9db5-5dadfd61fe7f")
-	)
-	(wire
-		(pts
-			(xy 198.12 41.91) (xy 182.88 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b62aafac-ae6d-4592-b310-33ea96692832")
 	)
 	(wire
 		(pts
@@ -7392,16 +7223,6 @@
 			(type default)
 		)
 		(uuid "c40b428d-0cad-4d7d-bfb1-73f8dbc8f8ec")
-	)
-	(wire
-		(pts
-			(xy 186.69 34.29) (xy 198.12 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4539397-d928-475f-a9fc-82bcae0a717c")
 	)
 	(wire
 		(pts
@@ -8012,16 +7833,6 @@
 			(justify left bottom)
 		)
 		(uuid "df176b98-e16d-4208-a014-604bcb45d51b")
-	)
-	(label "RST"
-		(at 190.5 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e29c1587-b4fb-4683-9ece-627ae35f052f")
 	)
 	(label "IN2_B"
 		(at 241.3 49.53 0)
@@ -10389,84 +10200,6 @@
 			(project "ultrasound-pulser"
 				(path "/2cb3ae1c-5fce-4d0f-9d76-334e5bd1a243"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 182.88 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "69c58161-e163-4006-b3bc-ce1b37faac00")
-		(property "Reference" "#PWR023"
-			(at 182.88 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 182.88 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 182.88 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "09949325-5aab-4f53-b42d-dec786b71a8c")
-		)
-		(instances
-			(project "ultrasound-pulser"
-				(path "/2cb3ae1c-5fce-4d0f-9d76-334e5bd1a243"
-					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -13137,84 +12870,6 @@
 			(project "ultrasound-pulser"
 				(path "/2cb3ae1c-5fce-4d0f-9d76-334e5bd1a243"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 186.69 34.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d9cefcf9-093f-41ae-8393-30eeed1dd826")
-		(property "Reference" "#PWR022"
-			(at 186.69 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 186.69 29.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 186.69 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "65f1affd-4f46-4351-8d21-2d089eeb8331")
-		)
-		(instances
-			(project "ultrasound-pulser"
-				(path "/2cb3ae1c-5fce-4d0f-9d76-334e5bd1a243"
-					(reference "#PWR022")
 					(unit 1)
 				)
 			)
