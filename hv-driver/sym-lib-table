@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "hv-custom-parts") (type "KiCad") (uri "${KIPRJMOD}/hv-custom-parts.kicad_sym") (options "") (descr ""))
+	(lib (name "lm5155") (type "KiCad") (uri "${KIPRJMOD}/lm5155.kicad_sym") (options "") (descr ""))
+)
