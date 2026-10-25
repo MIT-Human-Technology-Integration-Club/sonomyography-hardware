@@ -1,0 +1,5 @@
+(version 1)
+
+(rule "ADC data bus length"
+   (condition "A.NetName == '/ADC/D*'")
+   (constraint length (opt 23.7340mm)))

@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Sonomyography_RX") (type "KiCad") (uri "${KIPRJMOD}/Parts/Sonomyography_RX.kicad_sym") (options "") (descr ""))
+	(lib (name "AD9215") (type "KiCad") (uri "${KIPRJMOD}/Parts/AD9215.kicad_sym") (options "") (descr ""))
+)
