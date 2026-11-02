@@ -1370,12 +1370,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Transistor_FET:Q_NMOS_GDS"
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1383,7 +1381,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 5.08 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1393,8 +1391,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
+			(property "Value" "Q_NMOS_GDS"
+				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1415,18 +1413,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1437,40 +1424,7 @@
 					)
 				)
 			)
-			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+			(property "Description" "N-MOSFET transistor, gate/drain/source"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1481,7 +1435,18 @@
 					)
 				)
 			)
-			(symbol "NMOS_0_1"
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Q_NMOS_GDS_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -1625,7 +1590,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 2.921 0.381) (xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -1648,11 +1613,11 @@
 					)
 				)
 			)
-			(symbol "NMOS_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
+			(symbol "Q_NMOS_GDS_1_1"
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "D"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1667,10 +1632,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "G"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3823,6 +3788,16 @@
 		)
 		(uuid "afd516ef-f2fe-4ca1-9b56-34239f87e9c0")
 	)
+	(text "IRL540NSTRLPBF"
+		(exclude_from_sim no)
+		(at 104.902 50.292 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b845d88d-3740-4b34-b97b-182cf8540341")
+	)
 	(text "R_SMAX = 1.66 * 40mV * L_M * fSW / (NP/NS * 90V)\n= 1.66 * 40mV * 11uH * 250kHz / (0.5 * 90V)\n= 4mOhm\n\nC_F < (1-D)/(3 R_F fSW)\n= (1-0.8)/(3*100*250k)\n= 2.7n"
 		(exclude_from_sim no)
 		(at 112.014 75.692 0)
@@ -3864,12 +3839,6 @@
 			(justify left)
 		)
 		(uuid "f5a0e647-be83-49ff-becf-a7e24aed17b4")
-	)
-	(junction
-		(at 222.25 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "00766d2f-0cb3-4b96-8f59-d834fd996af3")
 	)
 	(junction
 		(at 260.35 120.65)
@@ -4004,12 +3973,6 @@
 		(uuid "7f89a93b-663c-42a1-9b5c-325a5f8103d0")
 	)
 	(junction
-		(at 222.25 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83bdedf1-80ed-422a-8295-ea60c3bc18f3")
-	)
-	(junction
 		(at 83.82 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4068,12 +4031,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc0a2ad1-9ca0-4e33-9ee2-ae869e2d799d")
-	)
-	(junction
-		(at 222.25 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc3c40af-ffcc-4639-860c-fc9c827c65d4")
 	)
 	(junction
 		(at 125.73 55.88)
@@ -4145,23 +4102,13 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 72.39) (xy 236.22 72.39)
+			(xy 219.71 72.39) (xy 236.22 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0d01fb50-d63f-4ea7-94de-d608f1848d3c")
-	)
-	(wire
-		(pts
-			(xy 222.25 59.69) (xy 222.25 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13ab24f0-c24b-48c0-bdd7-213503cf4b4d")
 	)
 	(wire
 		(pts
@@ -4172,6 +4119,16 @@
 			(type default)
 		)
 		(uuid "14481511-ac4c-42b7-9ffa-58c09b15985c")
+	)
+	(wire
+		(pts
+			(xy 95.25 55.88) (xy 97.79 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14833ed1-c103-4c5f-86f1-34c02a28da36")
 	)
 	(wire
 		(pts
@@ -4192,16 +4149,6 @@
 			(type default)
 		)
 		(uuid "1a30cb8f-ac04-44cf-8fe1-88dc12add34c")
-	)
-	(wire
-		(pts
-			(xy 222.25 59.69) (xy 236.22 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b61c6a1-399c-4196-b3e4-01c30d56ae5a")
 	)
 	(wire
 		(pts
@@ -4315,16 +4262,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 48.26) (xy 222.25 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e261f32-b5a5-4c7f-83d6-29e259652ce5")
-	)
-	(wire
-		(pts
 			(xy 22.86 49.53) (xy 22.86 48.26)
 		)
 		(stroke
@@ -4365,7 +4302,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 55.88) (xy 97.79 55.88)
+			(xy 83.82 55.88) (xy 87.63 55.88)
 		)
 		(stroke
 			(width 0)
@@ -4395,7 +4332,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 48.26) (xy 236.22 48.26)
+			(xy 219.71 48.26) (xy 236.22 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4545,16 +4482,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 48.26) (xy 222.25 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64462820-a5be-40df-b9fc-09dc2187b078")
-	)
-	(wire
-		(pts
 			(xy 91.44 77.47) (xy 91.44 78.74)
 		)
 		(stroke
@@ -4592,16 +4519,6 @@
 			(type default)
 		)
 		(uuid "6a2c2574-408a-4a96-9181-f476746ac967")
-	)
-	(wire
-		(pts
-			(xy 219.71 72.39) (xy 222.25 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e8398d8-fe77-4581-b702-676ef63b7418")
 	)
 	(wire
 		(pts
@@ -4742,16 +4659,6 @@
 			(type default)
 		)
 		(uuid "87f355a5-340f-430a-81ee-3b0b5989a5c3")
-	)
-	(wire
-		(pts
-			(xy 222.25 69.85) (xy 222.25 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88f5268b-c678-423c-a27b-4e58b7e2206e")
 	)
 	(wire
 		(pts
@@ -5002,16 +4909,6 @@
 			(type default)
 		)
 		(uuid "d50737b0-ee31-4363-bddd-04e2e771923e")
-	)
-	(wire
-		(pts
-			(xy 222.25 58.42) (xy 222.25 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dab74fbb-e3b5-4b4e-a9b5-111c8985d906")
 	)
 	(wire
 		(pts
@@ -5406,7 +5303,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 193.548 107.95 90)
 			(hide yes)
 			(show_name no)
@@ -5488,7 +5385,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 19.05 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -5548,108 +5445,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 215.9 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0fc95a07-6232-462c-ba15-e1cee4a1c478")
-		(property "Reference" "D2"
-			(at 215.9 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 215.9 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.9 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 215.9 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 215.9 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 215.9 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7d014be1-e64e-4697-845b-eb3a72845f4d")
-		)
-		(pin "1"
-			(uuid "84642c34-1d70-4b5f-b65e-8927de3365fa")
-		)
-		(instances
-			(project "hv-driver"
-				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 260.35 116.84 0)
 		(mirror y)
@@ -5684,7 +5479,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 262.128 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -5733,6 +5528,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 132.08 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17ab7bd0-4046-45cf-8aaa-b5fa602241c8")
+		(property "Reference" "D3"
+			(at 132.08 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 132.08 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 132.08 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 132.08 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 132.08 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 132.08 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7420361"
+			(at 132.08 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "daafce57-552d-4bdc-9515-30df80306a20")
+		)
+		(pin "1"
+			(uuid "bd1815d4-a36d-4240-a569-1415ca6ef69a")
+		)
+		(instances
+			(project "hv-driver"
+				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 34.29 63.5 0)
 		(mirror x)
@@ -5767,7 +5675,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 32.512 63.5 90)
 			(hide yes)
 			(show_name no)
@@ -5810,6 +5718,102 @@
 			(project "hv-driver"
 				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(at 102.87 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22b2c0ee-cafb-462e-b2b3-03fbcc3f1715")
+		(property "Reference" "Q2"
+			(at 109.22 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_NMOS_GDS"
+			(at 109.22 57.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
+			(at 107.95 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/drain/source"
+			(at 102.87 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C513158"
+			(at 102.87 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "4cadd917-f730-4fcb-a3a8-98c39a454d9e")
+		)
+		(pin "2"
+			(uuid "c2217f4a-e82f-45ff-8e1f-1d6e500a9f7b")
+		)
+		(pin "1"
+			(uuid "b58726b4-91b9-4b01-8202-06d6a4bc749b")
+		)
+		(instances
+			(project "hv-driver"
+				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -5928,7 +5932,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 190.8048 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -6010,7 +6014,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 249.8852 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6059,88 +6063,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 222.25 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b23a3be-60c5-4c80-9d72-7b303b7ece39")
-		(property "Reference" "C1"
-			(at 226.06 52.4509 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2200u"
-			(at 226.06 54.9909 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.2152 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 222.25 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "941c1906-0054-4811-9f89-f2314b0c58c1")
-		)
-		(pin "2"
-			(uuid "f4b8c47e-d3bc-461e-85c0-9086540b6ac2")
-		)
-		(instances
-			(project "hv-driver"
-				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 39.37 78.74 90)
 		(mirror x)
@@ -6173,7 +6095,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 39.37 76.962 90)
 			(hide yes)
 			(show_name no)
@@ -6335,7 +6257,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "footprints:hp2"
 			(at 171.45 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -6448,7 +6370,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 32.512 53.34 90)
 			(hide yes)
 			(show_name no)
@@ -6575,88 +6497,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 222.25 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "49c7aa14-6fe9-46b1-a959-b039b4b0eb52")
-		(property "Reference" "C3"
-			(at 226.06 63.8809 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2200u"
-			(at 226.06 66.4209 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.2152 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 222.25 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6804c3ce-c83d-4b6b-82ad-74668cc38a94")
-		)
-		(pin "2"
-			(uuid "ae0a83b6-ebda-47ea-b159-e938d3d8d150")
-		)
-		(instances
-			(project "hv-driver"
-				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 125.73 57.15 0)
 		(unit 1)
@@ -6768,7 +6608,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 25.0952 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -6851,7 +6691,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 92.4052 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6934,7 +6774,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 189.992 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -7017,7 +6857,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 262.128 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -7099,7 +6939,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 262.5852 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -7180,7 +7020,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 251.46 107.442 90)
 			(hide yes)
 			(show_name no)
@@ -7263,7 +7103,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 20.828 93.98 90)
 			(hide yes)
 			(show_name no)
@@ -7346,7 +7186,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 23.8252 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -7426,7 +7266,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DSS0012B"
+		(property "Footprint" "footprints:DSS0012B"
 			(at 63.5 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -7698,7 +7538,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 245.11 110.1852 0)
 			(hide yes)
 			(show_name no)
@@ -7778,7 +7618,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 215.9 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -7823,6 +7663,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7420361"
 			(at 215.9 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -7960,7 +7811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 37.7952 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8041,7 +7892,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 43.18 89.8652 0)
 			(hide yes)
 			(show_name no)
@@ -8202,7 +8053,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 23.8252 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -8323,124 +8174,6 @@
 			(project "hv-driver"
 				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 102.87 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "912c7e0e-68bf-4cf0-a337-d7a53587a9a0")
-		(property "Reference" "Q1"
-			(at 109.22 54.6099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 109.22 57.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 102.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 102.87 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 102.87 73.025 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 102.87 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 102.87 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "302b3b4b-f779-43c7-9d51-a8033eaeff03")
-		)
-		(pin "2"
-			(uuid "010db797-2449-4918-94ca-3e38669c6618")
-		)
-		(pin "3"
-			(uuid "23241fdb-b952-49e7-9d52-323a812a7319")
-		)
-		(instances
-			(project "hv-driver"
-				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -8638,7 +8371,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads"
 			(at 214.63 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8664,6 +8397,17 @@
 			)
 		)
 		(property "Description" "Generic DC optocoupler with NPN phototransistor output, pins order: anode/cathode/emitter/collector"
+			(at 209.55 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C258252"
 			(at 209.55 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -8730,7 +8474,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 200.9648 127 0)
 			(hide yes)
 			(show_name no)
@@ -8812,7 +8556,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 51.7652 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8895,7 +8639,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 20.828 82.55 90)
 			(hide yes)
 			(show_name no)
@@ -8938,6 +8682,119 @@
 			(project "hv-driver"
 				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 215.9 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af5e50b7-f452-4126-b339-52187a007dff")
+		(property "Reference" "D2"
+			(at 215.9 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 215.9 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 215.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 215.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 215.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7420361"
+			(at 215.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e849d295-831f-43fc-a892-9f22e6bd4cbf")
+		)
+		(pin "1"
+			(uuid "8bc4cf7d-ac92-42cd-a7eb-c0a17c6d9f7b")
+		)
+		(instances
+			(project "hv-driver"
+				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -9055,7 +8912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 262.5852 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9098,6 +8955,87 @@
 			(project "hv-driver"
 				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 91.44 55.88 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6754444-315a-4c53-aa25-f9bb5a2c7582")
+		(property "Reference" "R14"
+			(at 91.44 49.53 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 91.44 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 91.44 54.102 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 91.44 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9d554b29-b828-47b4-b9d3-e8028e7939cb")
+		)
+		(pin "1"
+			(uuid "69421817-578c-4b5f-ba79-12a5645ee0e1")
+		)
+		(instances
+			(project "hv-driver"
+				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -9214,7 +9152,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 97.79 66.802 90)
 			(hide yes)
 			(show_name no)
@@ -9297,7 +9235,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 234.188 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -9466,7 +9404,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 249.8852 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -9706,7 +9644,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 126.6952 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -9945,7 +9883,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 107.188 73.66 90)
 			(hide yes)
 			(show_name no)
@@ -10144,108 +10082,6 @@
 			(project "hv-driver"
 				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 132.08 48.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f775f957-79eb-40ef-a248-1c0c798963db")
-		(property "Reference" "D3"
-			(at 132.08 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 132.08 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 132.08 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 132.08 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 132.08 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a91209f1-86cd-4db3-8c44-2b4725f4d2a4")
-		)
-		(pin "1"
-			(uuid "2a119ba5-acfc-4ecc-89fc-9c85686a72f2")
-		)
-		(instances
-			(project "hv-driver"
-				(path "/9801edd3-74ef-4209-9998-d023c3d4cbb7"
-					(reference "D3")
 					(unit 1)
 				)
 			)
