@@ -63,7 +63,7 @@
           "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -526,6 +526,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -684,7 +685,7 @@
         "uuid": "9801edd3-74ef-4209-9998-d023c3d4cbb7"
       }
     ],
-    "used_designators": "D2-3,Q2,R14,C3,C20",
+    "used_designators": "H1-4",
     "variants": []
   },
   "sheets": [
