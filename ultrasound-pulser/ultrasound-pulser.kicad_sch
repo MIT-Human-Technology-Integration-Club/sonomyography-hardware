@@ -8807,7 +8807,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 107.95 88.5952 0)
 			(hide yes)
 			(show_name no)
@@ -8831,6 +8831,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 111.76 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7393958"
+			(at 111.76 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9604,6 +9615,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 44.45 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "323e4c3e-7f88-4961-98f1-b7d7ac3c33e8")
 		)
@@ -9839,6 +9861,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C1622"
+			(at 167.64 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5791e6a9-6cb6-4e1b-adc5-4f4e74c89079")
 		)
@@ -9989,6 +10022,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 52.07 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1575208"
 			(at 52.07 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -10435,6 +10479,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C1622"
+			(at 167.64 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1b7bed09-96a4-414d-a172-dc0c196bf6d7")
 		)
@@ -10481,7 +10536,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 52.07 43.4848 0)
 			(hide yes)
 			(show_name no)
@@ -10505,6 +10560,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 48.26 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7393958"
+			(at 48.26 44.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10917,6 +10983,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C384793"
+			(at 111.76 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "20f1057a-b39b-44ad-87f1-bbdbcb31f02d")
 		)
@@ -11197,7 +11274,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 107.95 96.2152 0)
 			(hide yes)
 			(show_name no)
@@ -11221,6 +11298,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 111.76 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7393958"
+			(at 111.76 95.25 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11378,6 +11466,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 158.75 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1622"
+			(at 158.75 71.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12064,6 +12163,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C384793"
+			(at 111.76 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "86758b15-4ec2-40a2-9e37-d572426173a1")
 		)
@@ -12212,6 +12322,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 158.75 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1622"
+			(at 158.75 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12462,6 +12583,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 176.53 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1622"
+			(at 176.53 71.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13144,6 +13276,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C384793"
+			(at 48.26 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "389f0f04-ba7e-467e-a439-c5cae9639984")
 		)
@@ -13376,6 +13519,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 96.52 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 96.52 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -13951,6 +14105,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 113.03 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C166926"
 			(at 113.03 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -14604,6 +14769,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 48.26 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C384793"
+			(at 48.26 31.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15627,6 +15803,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C21189"
+			(at 86.36 154.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6b0f8f8e-6b6e-44e6-baa8-0e0d8e89217d")
 		)
@@ -15673,7 +15860,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 44.45 53.0352 0)
 			(hide yes)
 			(show_name no)
@@ -15697,6 +15884,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 48.26 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7393958"
+			(at 48.26 52.07 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16541,6 +16739,17 @@
 		)
 		(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
 			(at 113.03 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15127"
+			(at 113.03 157.48 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
