@@ -3325,7 +3325,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "68p"
+		(property "Value" "16p"
 			(at 83.82 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3406,7 +3406,7 @@
 				)
 			)
 		)
-		(property "Value" "25R"
+		(property "Value" "100R"
 			(at 48.26 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3646,7 +3646,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50R"
+		(property "Value" "200R"
 			(at 93.98 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4280,7 +4280,7 @@
 				)
 			)
 		)
-		(property "Value" "150n"
+		(property "Value" "640n"
 			(at 71.12 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4520,7 +4520,7 @@
 				)
 			)
 		)
-		(property "Value" "25R"
+		(property "Value" "100R"
 			(at 48.26 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5164,7 +5164,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "68p"
+		(property "Value" "16p"
 			(at 62.23 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5326,7 +5326,7 @@
 				)
 			)
 		)
-		(property "Value" "150n"
+		(property "Value" "640n"
 			(at 71.12 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)

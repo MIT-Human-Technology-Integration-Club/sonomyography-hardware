@@ -4632,7 +4632,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "40k"
+		(property "Value" "39k"
 			(at 44.45 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5110,7 +5110,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_SPDT"
+		(property "Value" "PCM12SMTR"
 			(at 111.76 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6472,7 +6472,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_SPDT"
+		(property "Value" "PCM12SMTR"
 			(at 209.55 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
