@@ -2,7 +2,8 @@
 Sonomyography CAD and PCB
 
 ## Lore Accurate Master Plan
-<img width=50% alt="image" src="https://github.com/user-attachments/assets/acd1de92-7934-4763-ab03-51ea1758694f" />
+<img width="2880" height="1194" alt="image" src="https://github.com/user-attachments/assets/e4e0ee78-4faf-4561-9199-b32c67c0b964" />
+
 
 ## 90V Flyback Converter
 | Schematic | Layout | Render |
